@@ -1,0 +1,58 @@
+# ------------------------------
+# Python & Jupyter Ignore Rules
+# ------------------------------
+
+# Byte-compiled / optimized / DLL files
+_pycache_/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# VS Code or PyCharm specific files
+.vscode/
+.idea/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Python egg and packaging files
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.installed.cfg
+*.manifest
+*.spec
+
+# Cache
+*.cache
+*.pytest_cache/
+.cache/
+
+# Data files
+*.csv
+*.xlsx
+*.xls
+
+# --------------------------------
+# Project-specific exceptions
+# --------------------------------
+# Allow the main dataset to be tracked manually if desired
+!creditcard/EDA.ipynb
+# Uncomment below if you want to keep dataset in repo
+#!creditcard/creditcard.csv

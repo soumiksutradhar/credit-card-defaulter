@@ -15,6 +15,7 @@ venv/
 ENV/
 env/
 .venv/
+virenv/
 
 # VS Code or PyCharm specific files
 .vscode/
@@ -56,3 +57,6 @@ eggs/
 !creditcard/EDA.ipynb
 # Uncomment below if you want to keep dataset in repo
 #!creditcard/creditcard.csv
+
+# Environment / secrets
+.env

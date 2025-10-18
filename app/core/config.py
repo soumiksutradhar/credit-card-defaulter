@@ -7,12 +7,12 @@ class Settings(BaseSettings):
     DATABASE_HOST: str
     DATABASE_PORT: str
     DATABASE_NAME: str
-    ENVIRONMENT: str = "development"	# default string value "development provided here in case a default value is not given in .env file 
+    ENVIRONMENT: str = "Development"	# default string value "development provided here in case a default value is not given in .env file 
 
     @property
     def DATABASE_URL(self) -> str:	# constructs a PostgreSQL database URL
         return (
-            f"postgresql+psycopg2://{self.DATABASE_USER}:{self.DATABASE_PASSWORD}"
+            f"postgresql+asyncpg://{self.DATABASE_USER}:{self.DATABASE_PASSWORD}"
             f"@{self.DATABASE_HOST}:{self.DATABASE_PORT}/{self.DATABASE_NAME}"
         )
 
